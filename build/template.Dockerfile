@@ -16,7 +16,9 @@ RUN mkdir -p /home/user && \
     # terminal-based editors
     vi vim nano \
     # developer tools
-    curl git procps mc && \
+    curl git procps mc \
+    # other terminal tools
+    xterm-resize && \
     microdnf -y clean all && \
     # enable bash completion in interactive shells
     echo source /etc/profile.d/bash_completion.sh >> ~/.bashrc
